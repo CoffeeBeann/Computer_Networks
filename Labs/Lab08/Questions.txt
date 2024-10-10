@@ -1,0 +1,7 @@
+﻿Q1) The pro field refers to the protocol field and indicates the next level protocol used in the payload. It is defined by an 8-bit-value. In ICMP, the pro field is 0x01 which indicates that the payload contains an ICMP messages
+
+Q2) The type and code field describe in more detail the contents of the ICMP message. The type field is an 8-bit value that indicates the general category of a message. In this packet, the type field is 0x00 which tells us that this packet is a simple “echo reply”. Furthermore, the code field is also an 8-bit-value that tells us the condition of the general category. In this case, the code was 0x00 meaning that the echo reply was received with no further complications
+
+Q3) Looking at the response from the pinged host, we can see that the type value is 0x08, which indicates “echo request”. This makes sense because we sent a type 0x00 or an “echo” to the host, so the request makes sense that we sent one back. The code field is 0x00 indicating no further detail to be given from this ICMP packet
+
+Q4) the ICMP IS values for each of the Echo message request were the same giving 0x000f. 
